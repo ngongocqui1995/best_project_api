@@ -77,7 +77,7 @@ app.use(cors());
 
 
 // Configuring the database
-const dbConfig = require('./config/database.config.js');
+// const dbConfig = require('./config/database.config.js');
 const mongoose = require('mongoose');
 
 require('./app/routes/collection.routes.js')(app);
@@ -85,13 +85,13 @@ require('./app/routes/collection.routes.js')(app);
 mongoose.Promise = global.Promise;
 
 // Connecting to the database
-mongoose.connect(dbConfig.url)
-.then(() => {
-    console.log("Successfully connected to the database");    
-}).catch(err => {
-    console.log('Could not connect to the database. Exiting now...');
-    process.exit();
-});
+// mongoose.connect(dbConfig.url)
+// .then(() => {
+//     console.log("Successfully connected to the database");    
+// }).catch(err => {
+//     console.log('Could not connect to the database. Exiting now...');
+//     process.exit();
+// });
 
 // define a simple route
 app.get('/', (req, res) => {
