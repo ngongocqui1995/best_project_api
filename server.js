@@ -95,6 +95,9 @@ mongoose.connect(dbConfig.url)
 });
 
 // define a simple route
+app.get('/', (req, res) => {
+    res.json({"message": "Welcome to api story"});
+});
 
 app.listen(process.env.PORT || 4098, () => {
     console.log("Server is listening on port 4098");

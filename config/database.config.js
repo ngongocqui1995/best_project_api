@@ -1,3 +1,3 @@
 module.exports = {
-    url: 'mongodb://127.0.0.1:27017/storypicture'
+    url: 'mongodb://ngocqui:ngocqui0857894172@35.220.142.67:27017/storypicture'
 }
